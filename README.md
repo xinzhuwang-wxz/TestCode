@@ -21,8 +21,18 @@ just some codes for test
     因为torch涉及多个库，以上安装好后，先讲下面的.py文件替换后，通过跑程序查看报错文件（log.err）有针对性进行安装与更新
 二：Train.py
 
+    将NN/Train.py替换，主要修改的内容是准备模型训练所需的参数配置
 三：gravnet.py
+
+    将gravnet.py添加到NN/Net目录下
 
 四：loader.py
 
+    将NN/Data/loader.py替换
+
 五：注意注意注意
+
+    执行程序发现报错:NN/ANA/roc.py中分母fpr=0
+    所以将NN/ANA/roc.py中bkr=1/(fpr)修改为：
+    s_epsilon = 1e-8
+    bkr=1/(fpr + s_epsilon)
