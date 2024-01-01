@@ -14,6 +14,11 @@ just some codes for test
     PyTorch version: 2.1.2+cpu
     Torch Geometric version: 2.4.0
     Torch Cluster version: 1.6.3+pt21cpu
+    下载cluster时，我使用的是：
+        pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
+    
+    
+    因为torch涉及多个库，以上安装好后，先讲下面的.py文件替换后，通过跑程序查看报错文件（log.err）有针对性进行安装与更新
 二：Train.py
 
 三：gravnet.py
